@@ -15,7 +15,8 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
+          lowerCaseServiceId: true
+          #enabled: true
       routes:
       - id: employee-service
         uri: lb://employee-service
